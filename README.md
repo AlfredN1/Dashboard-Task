@@ -2,5 +2,7 @@
 ## Beskrivning
 Detta är en enkel webbplats byggd med HTML, CSS och JavaScript.
 
-## Användning
-1. Öppna `index.html` i din webbläsare för att visa webbplatsen.
+## Skapad av:
+[**Lord48**]
+
+## Länk till sidan: [https://lord48.github.io/Dashboard-Task/)
