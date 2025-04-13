@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personlig Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+
+<body>
+  <div class="dashboard-container">
+
+    <div class="header-section">
+      <div class="clock-date">
+        <div id="clock"></div>
+        <div id="date"></div>
+      </div>
+    </div>
+
+
+    <h1 id="dashboard-title" contenteditable="true">John Doe Dashboard</h1>
+
+
+    <div class="widgets-container">
+
+      <div class="widget" id="quick-links">
+        <h2>Snabblänkar</h2>
+        <div id="links-container">
+
+        </div>
+        <div class="add-link-container">
+          <button id="add-link-btn" class="add-btn">Lägg till länk</button>
+        </div>
+      </div>
+
+
+      <div class="widget" id="weather-widget">
+        <h2>Dagens väder</h2>
+        <div id="weather-container">
+          <div id="loading-weather">Laddar väder...</div>
+        </div>
+      </div>
+
+
+      <div class="widget" id="custom-api">
+        <h2>[...]</h2>
+        <div id="custom-api-container">
+
+        </div>
+      </div>
+
+
+      <div class="widget" id="notes-widget">
+        <h2>Anteckningar</h2>
+        <textarea id="notes-area" placeholder="Skriv dina anteckningar här..."></textarea>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="add-link-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Lägg till länk</h2>
+      <div class="form-group">
+        <label for="link-title">Titel:</label>
+        <input type="text" id="link-title" placeholder="Länktitel">
+      </div>
+      <div class="form-group">
+        <label for="link-url">URL:</label>
+        <input type="url" id="link-url" placeholder="https://example.com">
+      </div>
+      <button id="save-link-btn">Spara</button>
+    </div>
+  </div>
+
+  <div id="overlay"></div>
+
+  <footer>
+
+  </footer>
+
+
+</body>
+
+</html>
